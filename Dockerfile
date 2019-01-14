@@ -10,3 +10,4 @@ RUN apt-get update && apt-get install -y \
 
 # Override with custom opcache settings
 COPY config.ini $PHP_INI_DIR/conf.d/
+RUN chmod a+rwx -R /var/www/html
